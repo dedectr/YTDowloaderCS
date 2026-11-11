@@ -1,9 +1,9 @@
-﻿using src.Convert;
+﻿using src.Infra.Dowloader;
 
 public class Program {
     public static async Task Main(){
         String a = "fds!";
-        var dow = new Dowloader();
+        var dow = new Dowloaders();
         Console.Write("Digite a URL: ");
         String? b = Console.ReadLine();
         if (b == null)
@@ -11,7 +11,7 @@ public class Program {
             Console.WriteLine("Erro URL não definida");
         } else {
             a = b;
-            await dow.FazerDowload(a);
+            await dow.DowloaderAudio(a);
         }
     }
 }

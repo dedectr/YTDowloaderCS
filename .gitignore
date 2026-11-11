@@ -39,6 +39,9 @@ publish/
 [Bb]uild[Ll]og.*
 TestResult.xml
 
+Music/*
+video/*
+
 # OS files
 .DS_Store
 Thumbs.db
